@@ -8,6 +8,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import Tippy from '@tippyjs/react/headless';
 
+import Button from '~/components/Button';
 import AccountItem from '~/components/AccountItem';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 // Sử dụng {} khi import Wrapper vì trong file Popper/index.js,
@@ -61,7 +62,10 @@ function Header() {
             </button>
           </div>
         </Tippy>
-        <div className={cx('actions')}></div>
+        <div className={cx('actions')}>
+          <Button text>Upload</Button>
+          <Button primary>Log in</Button>
+        </div>
       </div>
     </header>
   );
